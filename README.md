@@ -17,3 +17,7 @@ As a user, I want to be able to understand the overall positions of candidates.
 As a user, I want to be able to filter candidates by office name and policy positions. 
 
 As a user, I want to be able to be directed to the candidate's websites.
+
+#### Data Source
+The candidate data used within this analysis is pulled from the official elections.maryland.gov website.
+
