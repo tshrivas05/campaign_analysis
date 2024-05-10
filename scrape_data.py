@@ -21,7 +21,7 @@ def data_load(file_path: Path, county_filter: str = 'Montgomery County') -> pd.D
 
 # returns the url for the first result corresponding to the search term
 def google_search(search_term: str, num: int = 1) -> str:
-    x = requests.get(f'https://www.googleapis.com/customsearch/v1?key=AIzaSyDck-hAw44mAkjyuWC3vZZ2NPF5CppuurA&cx=363e2e664898f419b&q={search_term}&num={num}')
+    x = requests.get(f'https://www.googleapis.com/customsearch/v1?key=**&cx=363e2e664898f419b&q={search_term}&num={num}')
     return x.json()['items'][0]['formattedUrl']
 
 def consolidate_source_website(candidate_data: pd.DataFrame):
